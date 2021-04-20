@@ -1,0 +1,101 @@
+/*grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: ;
+}
+
+ */
+:root {
+    /* CSS HEX */
+    --ming: #006d77ff;
+    --middle-blue-green: #83c5beff;
+    --alice-blue: #edf6f9ff;
+    --unbleached-silk: #ffddd2ff;
+    --dark-salmon: #e29578ff;
+}
+@font-face {
+    font-family: poppins;
+    src: url("Poppins-Regular.ttf");
+}
+*{
+    box-sizing: border-box;
+    background-color: var(--alice-blue);
+    font-family: poppins;
+}
+.h1{
+    color: var(--ming);
+}
+.menuBar{
+    padding: 40px;
+    border: 1px solid var(--ming);
+    margin: 10px;
+}
+.aboutMe {
+    float: left;
+    width: 25%;
+}
+.Skills {
+    float: left;
+    width: 25%;
+}
+.Education {
+    float: left;
+    width: 25%;
+}
+.Contact {
+    float: left;
+    width: 25%;
+}
+
+.picture{
+    float: left;
+    width: 40%;
+    padding: 10px;
+}
+.aboutMeH1{
+    float: left;
+    width: 60%;
+    padding: 10px;
+}
+.skillsH1{
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+.educationH1{
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+.contactH1{
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+.form{
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+.send{
+    padding: 10px;
+    margin: 20px;
+    width: 5%;
+}
+.info{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+@media only screen and (max-width: 1000px) {
+   .picture{
+
+    width: 100%;
+    padding: 10px;
+}
+.aboutMeH1{
+
+    width: 100%;
+    padding: 10px;
+}
+}
