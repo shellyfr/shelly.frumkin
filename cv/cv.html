@@ -4,60 +4,72 @@
     <title>cv shelly</title>
     <link rel="stylesheet" href="cv.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+    <script type="text/javascript" src="cv.js"></script>
+
 </head>
 <body>
-<div class="menuBar">
-    <div class="aboutMe">About me</div>
-    <div class="Skills">Skills</div>
-    <div class="Education">Education</div>
-    <div class="Contact">Contact</div>
+<div class="navbar">
+    <button class="aboutMe" onclick="switchToAbout()">About me</button>
+    <button class="Skills" onclick="switchToSkills()">Skills</button>
+    <button class="Education" onclick="switchToEducation()">Education</button>
+    <button class="Contact" onclick="switchToContact()">Contact</button>
 </div>
-<div class="picture">   <img src="picture.jpeg" width="400" height="400" alt="picture"></div>
-<div class="aboutMeH1">
-    <h1>SHELLY FRUMKIN</h1>
-    <h2>About me</h2>
-    <P>
-        MY STORY
-    </P>
-</div>
-<div class="skillsH1">
-    <h2>Skills</h2>
-    <p>
+<div class="main">
+    <div class="picture"> <img src="picture.jpeg" width="400" height="400" alt="picture"></div>
+    <div class="aboutMeH1" id="aboutMe">
+        <h1>SHELLY FRUMKIN</h1>
+        <h2>About me</h2>
+        <P>
+            MY STORY
+        </P>
+    </div>
+    <div class="skillsH1" id="skills">
+        <h2> &ensp; Skills</h2>
+        <p>
 
-    </p>
-</div>
-<div class="educationH1">
-    <h2>Education</h2>
-    <p>
+        </p>
+    </div>
+    <div class="educationH1" id="education">
+        <h2> &ensp; Education</h2>
+        <p>
 
-    </p>
-</div>
-<div class="contactH1">
-    <h2>Contact</h2>
-    <p>
-        L'ETS TALK
-    </p>
+        </p>
+    </div>
+    <div class="contactH1" id="contact">
+        <h2> &ensp; Contact</h2>
+    </div>
+    <div class="form">
+        <form>
+            <b>L'ETS TALK</b> <br>
+            <br><label for="fullname" >FULL NAME:</label><br>
+            <input type="text" id="fullname" name="fullname"><br>
+            <br><label for="email">EMAIL ADDRESS:</label><br>
+            <input type="email" id="email" placeholder="name@example.com"><br>
+            <br> <label for="message">MESSAGE:</label><br>
+            <textarea id="message" placeholder="Leave a massage here" ></textarea><br>
+            <br><button type="button" class="btn btn-outline-primary">SEND</button>
 
-</div>
-<div class="form">
-    <form>
-         <label for="fullname">FULL NAME:</label><br>
-        <input type="text" id="fullname" name="fullname"><br>
-        <label for="email">EMAIL ADDRESS:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="message">MESSAGE:</label><br>
-        <input type="text" id="message" name="message">
-    </form>
+        </form>
 
+    </div>
+
+    <div class="info">
+        <b>Shelly Frumkin</b>
+        <p>
+            Phone: 0545965896 <br>
+            Email: shelly.fr@gmail.com <br>
+            <br><a href="https://www.facebook.com/shelly.frumkin" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/shelly_fr_/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/shelly-frumkin-451559207/" class="fa fa-linkedin"></a>
+        </p>
+    </div>
 </div>
 
-<div class="info">
-    <h3>Shelly Frumkin</h3>
-    <p>
-        Phone: <br>
-        Email:
-    </p>
-</div>
-<div class="send"> SEND </div>
 </body>
 </html>

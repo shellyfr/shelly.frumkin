@@ -22,8 +22,16 @@
     background-color: var(--alice-blue);
     font-family: poppins;
 }
-.h1{
-    color: var(--ming);
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+h1{
+    color: var( --dark-salmon);
+}
+h2{
+     color: var(--ming);
 }
 .menuBar{
     padding: 40px;
@@ -53,41 +61,86 @@
     padding: 10px;
 }
 .aboutMeH1{
+    /*display: none;*/
     float: left;
     width: 60%;
     padding: 10px;
 }
 .skillsH1{
+    display: none;
     float: left;
     width: 100%;
     padding: 10px;
 }
 .educationH1{
+    display: none;
     float: left;
     width: 100%;
     padding: 10px;
 }
 .contactH1{
+    display: none;
     float: left;
     width: 100%;
     padding: 10px;
 }
 .form{
     float: left;
-    width: 50%;
-    padding: 20px;
-}
-.send{
+    width: 45%;
     padding: 10px;
     margin: 20px;
-    width: 5%;
+    border: 1px solid var(--ming) ;
+    border-radius: 5%;
+}
+.btn-outline-primary{
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+    background: var(--ming);
+    color: white;
+    padding:10px;
+}
+.btn-outline-primary:hover{
+        opacity: 0.7;
 }
 .info{
     float: left;
-    width: 50%;
+    width: 45%;
     padding: 10px;
+    margin: 20px;
+    border: 1px solid var(--ming) ;
+    border-radius: 5%;
 }
-@media only screen and (max-width: 1000px) {
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #2760dd;
+    color: white;
+    padding:10px;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    padding:10px;
+}
+.fa-instagram {
+    background: #b5368b;
+    color: white;
+    padding:10px;
+}
+
+@media only screen and (max-width: 758px) {
    .picture{
 
     width: 100%;
@@ -98,4 +151,33 @@
     width: 100%;
     padding: 10px;
 }
+}
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
