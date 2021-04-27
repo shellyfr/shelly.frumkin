@@ -1,10 +1,3 @@
-/*grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: ;
-}
-
- */
 :root {
     /* CSS HEX */
     --ming: #006d77ff;
@@ -33,26 +26,11 @@ h1{
 h2{
      color: var(--ming);
 }
-.menuBar{
-    padding: 40px;
-    border: 1px solid var(--ming);
-    margin: 10px;
-}
-.aboutMe {
-    float: left;
-    width: 25%;
-}
-.Skills {
-    float: left;
-    width: 25%;
-}
-.Education {
-    float: left;
-    width: 25%;
-}
-.Contact {
-    float: left;
-    width: 25%;
+
+.navBtn {
+    margin-left: 3%;
+    width: 20%;
+    border-radius: 12px;
 }
 
 .picture{
@@ -61,36 +39,34 @@ h2{
     padding: 10px;
 }
 .aboutMeH1{
-    /*display: none;*/
     float: left;
     width: 60%;
-    padding: 10px;
+
 }
 .skillsH1{
     display: none;
     float: left;
-    width: 100%;
-    padding: 10px;
+    width: 60%;
 }
 .educationH1{
     display: none;
     float: left;
-    width: 100%;
-    padding: 10px;
+    width: 60%;
 }
 .contactH1{
     display: none;
     float: left;
-    width: 100%;
+    width: 60%;
     padding: 10px;
+    text-align: center;
 }
 .form{
-    float: left;
-    width: 45%;
+    width: 60%;
     padding: 10px;
-    margin: 20px;
+    margin: auto;
     border: 1px solid var(--ming) ;
     border-radius: 5%;
+    text-align: center;
 }
 .btn-outline-primary{
     text-align: center;
@@ -101,15 +77,14 @@ h2{
     padding:10px;
 }
 .btn-outline-primary:hover{
-        opacity: 0.7;
+    opacity: 0.7;
 }
 .info{
-    float: left;
-    width: 45%;
-    padding: 10px;
-    margin: 20px;
-    border: 1px solid var(--ming) ;
-    border-radius: 5%;
+    position: -ms-device-fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 400px;
+    text-align: center;
 }
 .fa {
     padding: 20px;
@@ -142,42 +117,56 @@ h2{
 
 @media only screen and (max-width: 758px) {
    .picture{
-
     width: 100%;
     padding: 10px;
 }
 .aboutMeH1{
-
     width: 100%;
-    padding: 10px;
 }
+.skillsH1{
+    width: 100%;
+}
+.educationH1{
+    width: 100%;
+}
+.contactH1{
+    width: 100%;
+    text-align: center;
+}
+}
+textarea {
+   resize: none;
+    width: 50%;
+    height: 20%;
 }
 /* The navigation bar */
 .navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+
 }
 
 /* Links inside the navbar */
 .navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
 }
 
 /* Change background on mouse-over */
 .navbar a:hover {
-  background: #ddd;
-  color: black;
+    background: #ddd;
+    color: black;
 }
 
 /* Main content */
 .main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
 }

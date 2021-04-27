@@ -6,33 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
     <script type="text/javascript" src="cv.js"></script>
 
 </head>
 <body>
 <div class="navbar">
-    <button class="aboutMe" onclick="switchToAbout()">About me</button>
-    <button class="Skills" onclick="switchToSkills()">Skills</button>
-    <button class="Education" onclick="switchToEducation()">Education</button>
-    <button class="Contact" onclick="switchToContact()">Contact</button>
+    <button class="navBtn" onclick="switchToAbout()">About me</button>
+    <button class="navBtn" onclick="switchToSkills()">Skills</button>
+    <button class="navBtn" onclick="switchToEducation()">Education</button>
+    <button class="navBtn" onclick="switchToContact()">Contact</button>
 </div>
 <div class="main">
     <div class="picture"> <img src="picture.jpeg" width="400" height="400" alt="picture"></div>
     <div class="aboutMeH1" id="aboutMe">
-        <h1>SHELLY FRUMKIN</h1>
+        <h1 id="nameF" >SHELLY FRUMKIN</h1>
         <h2>About me</h2>
         <P>
             MY STORY
         </P>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
     </div>
     <div class="skillsH1" id="skills">
         <h2> &ensp; Skills</h2>
         <p>
-
+            bla bla bla<br>
         </p>
     </div>
     <div class="educationH1" id="education">
@@ -43,10 +45,10 @@
     </div>
     <div class="contactH1" id="contact">
         <h2> &ensp; Contact</h2>
-    </div>
-    <div class="form">
+
+        <div class="form">
         <form>
-            <b>L'ETS TALK</b> <br>
+            <b> Keep in touch</b> <br>
             <br><label for="fullname" >FULL NAME:</label><br>
             <input type="text" id="fullname" name="fullname"><br>
             <br><label for="email">EMAIL ADDRESS:</label><br>
@@ -56,14 +58,22 @@
             <br><button type="button" class="btn btn-outline-primary">SEND</button>
 
         </form>
+<!--        <br>-->
+<!--            <br>-->
+<!--            <br>-->
+<!--            <br>-->
+<!--            <br>-->
+<!--            <br>-->
+    </div>
 
     </div>
+
 
     <div class="info">
         <b>Shelly Frumkin</b>
         <p>
-            Phone: 0545965896 <br>
-            Email: shelly.fr@gmail.com <br>
+            <u>Phone:</u> 0545965896,
+            <u>Email:</u> shelly.fr@gmail.com<br>
             <br><a href="https://www.facebook.com/shelly.frumkin" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/shelly_fr_/" class="fa fa-instagram"></a>
             <a href="https://www.linkedin.com/in/shelly-frumkin-451559207/" class="fa fa-linkedin"></a>
