@@ -4,7 +4,7 @@
     --middle-blue-green: #83c5beff;
     --alice-blue: #edf6f9ff;
     --unbleached-silk: #ffddd2ff;
-    --dark-salmon: #e29578ff;
+    --dark-salmon: #d96537;
 }
 @font-face {
     font-family: poppins;
@@ -25,12 +25,14 @@ h1{
 }
 h2{
      color: var(--ming);
+     text-align: center;
 }
 
 .navBtn {
     margin-left: 3%;
     width: 20%;
     border-radius: 12px;
+
 }
 
 .picture{
@@ -42,16 +44,19 @@ h2{
     float: left;
     width: 60%;
 
+
 }
 .skillsH1{
     display: none;
     float: left;
     width: 60%;
+
 }
 .educationH1{
     display: none;
     float: left;
     width: 60%;
+
 }
 .contactH1{
     display: none;
@@ -85,6 +90,21 @@ h2{
     bottom: 10px;
     width: 400px;
     text-align: center;
+}
+#name{
+     color: var( --dark-salmon);
+}
+#b1{
+     color: var( --dark-salmon);
+}
+#b2{
+     color: var( --dark-salmon);
+}
+#b3{
+     color: var( --dark-salmon);
+}
+#b4{
+     color: var( --dark-salmon);
 }
 .fa {
     padding: 20px;
