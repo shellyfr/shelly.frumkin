@@ -1,0 +1,18 @@
+{% include 'header.html' %}
+
+{% extends 'cv.html' %}
+{% block assignment8 %}
+    <br>
+    <br>
+    <h1>My hobbies:</h1>
+    <ul>
+        {% for hobby in hobbies %}
+            {% if hobby |wordcount >1 %}
+                <li>{{ hobby|upper }}</li>
+            {% else %}
+                 <li>{{ hobby|lower }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endblock %}
+

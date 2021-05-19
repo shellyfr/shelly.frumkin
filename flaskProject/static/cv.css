@@ -1,0 +1,192 @@
+:root {
+    /* CSS HEX */
+    --ming: #006d77ff;
+    --middle-blue-green: #83c5beff;
+    --alice-blue: #edf6f9ff;
+    --unbleached-silk: #ffddd2ff;
+    --dark-salmon: #d96537;
+}
+@font-face {
+    font-family: poppins;
+    src: url("Poppins-Regular.ttf");
+}
+*{
+    box-sizing: border-box;
+    background-color: var(--alice-blue);
+    font-family: poppins;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+h1{
+    color: var( --dark-salmon);
+}
+h2{
+     color: var(--ming);
+     text-align: center;
+}
+
+.navBtn {
+    margin-left: 3%;
+    width: 20%;
+    border-radius: 12px;
+
+}
+
+.picture{
+    float: left;
+    width: 40%;
+    padding: 10px;
+}
+.aboutMeH1{
+    float: left;
+    width: 60%;
+
+
+}
+.skillsH1{
+    display: none;
+    float: left;
+    width: 60%;
+
+}
+.educationH1{
+    display: none;
+    float: left;
+    width: 60%;
+
+}
+.contactH1{
+    display: none;
+    float: left;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+}
+.form{
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid var(--ming) ;
+    border-radius: 5%;
+    text-align: center;
+}
+.btn-outline-primary{
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+    background: var(--ming);
+    color: white;
+    padding:10px;
+}
+.btn-outline-primary:hover{
+    opacity: 0.7;
+}
+.info{
+    position: -ms-device-fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 400px;
+    text-align: center;
+}
+#name{
+     color: var( --dark-salmon);
+}
+#b1{
+     color: var( --dark-salmon);
+}
+#b2{
+     color: var( --dark-salmon);
+}
+#b3{
+     color: var( --dark-salmon);
+}
+#b4{
+     color: var( --dark-salmon);
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #2760dd;
+    color: white;
+    padding:10px;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    padding:10px;
+}
+.fa-instagram {
+    background: #b5368b;
+    color: white;
+    padding:10px;
+}
+
+@media only screen and (max-width: 758px) {
+   .picture{
+    width: 100%;
+    padding: 10px;
+}
+.aboutMeH1{
+    width: 100%;
+}
+.skillsH1{
+    width: 100%;
+}
+.educationH1{
+    width: 100%;
+}
+.contactH1{
+    width: 100%;
+    text-align: center;
+}
+}
+textarea {
+   resize: none;
+    width: 50%;
+    height: 20%;
+}
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}

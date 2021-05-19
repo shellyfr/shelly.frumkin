@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cv shelly</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='cv.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="{{url_for('static',filename='cv.js')}}"></script>
+
+</head>
+<body>
+{% block assignment8 %}
+{% include 'header.html' %}
+<div class="main">
+    <div class="picture"> <img src="{{url_for('static',filename='picture.jpeg')}}" width="400" height="400" alt="picture"></div>
+    <div class="aboutMeH1" id="aboutMe">
+        <h1 id="nameF" >SHELLY FRUMKIN</h1>
+        <h2>About me</h2>
+        <P>
+            I am 24 years old. I currently live in Be'er Sheva and originally from Haifa.<br>
+            I volunteered for the Perach organization for a one year.<br>
+            I speak three languages: Hebrew, English and Russian.<br>
+
+            <a c href="userList.html"><b>Users List</b></a>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+    <div class="skillsH1" id="skills">
+        <h2> &ensp; Skills</h2>
+        <p>
+            Microsoft Office<br>
+            <br>
+           <u>Code languages:</u><br>
+            JAVA<br>
+            SQL<br>
+            R studio<br>
+            R Markdown<br>
+            VBA<br>
+            labView<br>
+            <br>
+            <u>Programs:</u><br>
+            Solidworks<br>
+            Visual paradigm<br>
+            Power bi<br>
+        </p>
+    </div>
+    <div class="educationH1" id="education">
+        <h2> &ensp; Education</h2>
+        <p>
+            2018 - 2022 - 3rd year student, <br>
+            B.Sc. of Industrial Engineering and Management, <br>
+            Specializing in information systems<br>
+            at Ben Gurion University.
+        </p>
+    </div>
+    <div class="contactH1" id="contact">
+        <h2> &ensp; Contact</h2>
+
+        <div class="form">
+        <form>
+            <b> Keep in touch</b> <br>
+            <br><label for="fullname" >FULL NAME:</label><br>
+            <input type="text" id="fullname" name="fullname"><br>
+            <br><label for="email">EMAIL ADDRESS:</label><br>
+            <input type="email" id="email" placeholder="name@example.com"><br>
+            <br> <label for="message">MESSAGE:</label><br>
+            <textarea id="message" placeholder="Leave a massage here" ></textarea><br>
+            <br><button type="button" class="btn btn-outline-primary">SEND</button>
+
+        </form>
+
+    </div>
+
+    </div>
+
+
+    <div class="info">
+        <b id="name">Shelly Frumkin</b>
+        <p>
+            <u>Phone:</u> 0545965896,
+            <u>Email:</u> shelly.fr@gmail.com<br>
+            <br><a href="https://www.facebook.com/shelly.frumkin" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/shelly_fr_/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/shelly-frumkin-451559207/" class="fa fa-linkedin"></a>
+        </p>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>
