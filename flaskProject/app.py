@@ -41,8 +41,10 @@ def assignment9():
             if request.args['search'] == user['firstname'] \
                     or request.args['search'] == user['lastname'] \
                     or request.args['search'] == user['email']:
-
                 result = [user['firstname'], user['lastname'], user['email']]
+                break
+            else:
+                result = "User not found"
         if request.args['search'] == "":
             result = users_list
     else:
