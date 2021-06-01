@@ -5,3 +5,8 @@
     <button class="navBtn" onclick="switchToEducation()"> <b id="b3"> Education </b> </button>
     <button class="navBtn" onclick="switchToContact()"> <b id="b4"> Contact </b> </button>
 </div>
+
+{% if session['username'] %}
+    <br>
+    <h4> welcome {{ session['username'] }}</h4>
+{% endif %}

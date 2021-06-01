@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shelly assignment9</title>
+</head>
+<body>
+    <h1> assignment 9 </h1>
+    <form method="get" action="/assignment9">
+        <input name="search" type="text" placeholder="Search.." onload="this.name='search11'">
+        <input type="submit">
+    </form>
+    <h2> search result </h2>
+    {% if result %}
+        <div>{{ result }}</div>
+    {% endif %}
+
+    {% if session['username'] %}
+       <h2>welcome {{ session['username'] }}</h2>
+{#        <h2> welcome {{ user_name }}</h2>#}
+    {% else %}
+        <h2>logg in:</h2>
+
+        <form method="post" action="/assignment9">
+            <input name="username" type="text" placeholder="user name">
+            <input type="submit">
+        </form>
+    {% endif %}
+    <a href="{{ url_for('logout') }}" >logout</a>
+</body>
+</html>
