@@ -1,4 +1,5 @@
 from flask import Flask, redirect, url_for, render_template, request, session
+import mysql.connector
 
 app = Flask(__name__)
 app.secret_key = '123'
@@ -72,6 +73,11 @@ def assignment9():
 def logout():
     session['username'] = ''
     return redirect(url_for('assignment9'))
+
+
+# assignment10
+from assignment10 import assignment10
+app.register_blueprint(assignment10)
 
 
 if __name__ == '__main__':
