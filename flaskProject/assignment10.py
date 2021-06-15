@@ -1,4 +1,4 @@
-import json
+from flask import jsonify
 import mysql.connector
 from flask import render_template, Blueprint, request, redirect, flash
 
@@ -30,6 +30,9 @@ def interact_db(query, query_type: str):
     connection.close()
     cursor.close()
     return return_value
+
+
+
 
 
 @assignment10.route('/assignment10')
@@ -67,4 +70,32 @@ def delete():
     interact_db(query=query, query_type="commit")
     flash('user has been deleted')
     return redirect('/assignment10')
+
+
+# -----------------------assignment 11-----------------------
+
+
+@assignment10.route('/assignment11/users', methods=['GET'])
+def users_func():
+    query = "SELECT * FROM users"
+    query_result = interact_db(query=query, query_type="fetch")
+    response = {}
+    if len(query_result) != 0:
+        response = query_result
+    response = jsonify(response)
+    return response
+
+
+@assignment10.route('/assignment11/users/selected', defaults={'SOME_USER_ID': 1})
+@assignment10.route('/assignment11/users/selected/<int:SOME_USER_ID>', methods=['GET'])
+def users_data(SOME_USER_ID):
+    query = "SELECT * FROM users WHERE id= '%s';" % SOME_USER_ID
+    query_result = interact_db(query=query, query_type="fetch")
+    response = {}
+    if len(query_result) != 0:
+        response = query_result[0]
+    else:
+        response = 'User does not exist'
+    response = jsonify(response)
+    return response
 
